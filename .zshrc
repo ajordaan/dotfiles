@@ -81,7 +81,9 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-export EDITOR='vim'
+export TERM='xterm-256color'
+export EDITOR='nvim'
+export VISUAL='nvim'
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -115,6 +117,11 @@ alias yamlformat='npm run update --prefix code_snippets/language-files'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/.git/ --work-tree=$HOME'
 alias fly-rails='fly ssh console -C "app/bin/rails console"'
 alias lg='lazygit'
+alias recent-branches="git for-each-ref --count=5 --sort=-committerdate refs/heads/ --format='%(refname:short)'"
+alias rb="recent-branches"
+
+alias fly-deploy-staging='fly deploy -c ./fly.staging.toml'
+alias fly-deploy-production='fly deploy -c ./fly.production.toml'
 
 . /usr/local/opt/asdf/libexec/asdf.sh
 
@@ -123,7 +130,7 @@ function heroku-rails {
 }
 
 
-function jira {
+function open-jira {
   open -a "Google Chrome" "https://platform45.atlassian.net/jira/software/c/projects/HOW/boards/284?assignee=613f0ec91238e800710f93b1"
 }
 
@@ -133,6 +140,38 @@ function open-pr-app {
 
 function open-pr {
   open -a "Google Chrome" "https://github.com/howler/Howler/pull/${1}"
+}
+
+function bundle-id {
+  osascript -e 'id of app "'"$1"'"'
+}
+
+function jira-branch {
+  current_branch=$(git branch --show-current)
+  issue=${current_branch:3}
+  jira issues show "$issue"
+}
+
+function new-ticket {
+  git checkout master
+  git pull
+  echo "Checked out and pulled master"
+  echo "Creating new branch"
+  git checkout -b "aj-how-$1"
+}
+
+
+function merge-master {
+  current_branch=$(git branch --show-current)
+  echo "Current Branch: $current_branch"
+  git pull
+  git checkout master
+  git pull
+  echo "Checked out and pulled master"
+  echo "Checking out $current_branch"
+  git checkout "$current_branch"
+  echo "Merging master"
+  git merge master
 }
 
 export NVM_DIR="$HOME/.nvm"
