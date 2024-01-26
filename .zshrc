@@ -119,6 +119,8 @@ alias fly-rails='fly ssh console -C "app/bin/rails console"'
 alias lg='lazygit'
 alias recent-branches="git for-each-ref --count=5 --sort=-committerdate refs/heads/ --format='%(refname:short)'"
 alias rb="recent-branches"
+alias nvim-config="cd ~/.config/nvim && nvim ."
+alias zsh-config="cd ~ && nvim ./.zshrc"
 
 alias fly-deploy-staging='fly deploy -c ./fly.staging.toml'
 alias fly-deploy-production='fly deploy -c ./fly.production.toml'
@@ -132,6 +134,11 @@ function heroku-rails {
 
 function open-jira {
   open -a "Google Chrome" "https://platform45.atlassian.net/jira/software/c/projects/HOW/boards/284?assignee=613f0ec91238e800710f93b1"
+}
+
+function open-ticket {
+  issue=${current_branch:3}
+  open -a "Google Chrome" "https://platform45.atlassian.net/browse/$issue"
 }
 
 function open-pr-app {
