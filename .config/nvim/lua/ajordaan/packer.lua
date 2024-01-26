@@ -31,9 +31,10 @@ return require('packer').startup(function(use)
 
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'})
   use('nvim-treesitter/playground')
-  use('nvim-treesitter/nvim-treesitter-context')
+  -- use('nvim-treesitter/nvim-treesitter-context')
   use('ThePrimeagen/harpoon')
   use('mbbill/undotree')
+  use ('kyazdani42/nvim-web-devicons')
   use('tpope/vim-fugitive')
   use('tpope/vim-surround')
   use('AndrewRadev/splitjoin.vim')
@@ -54,10 +55,29 @@ return require('packer').startup(function(use)
   use('Julian/vim-textobj-variable-segment')
   use('justinmk/vim-sneak')
   use('kdheepak/lazygit.nvim')
-  use('tpope/vim-endwise')
   use('mattn/emmet-vim')
+  use('ntpeters/vim-better-whitespace')
+  use('gerazov/toggle-bool.nvim')
+  use('brenoprata10/nvim-highlight-colors')
+  use('gpanders/editorconfig.nvim')
+  use('sQVe/sort.nvim')
+  use('stevearc/aerial.nvim')
+  use('nvim-tree/nvim-web-devicons')
+  use('nvim-pack/nvim-spectre')
+  use {'axkirillov/easypick.nvim', requires = 'nvim-telescope/telescope.nvim'}
+  use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
 
-  use('nvim-treesitter/nvim-treesitter-context')
+use {
+    'glacambre/firenvim',
+    run = function() vim.fn['firenvim#install'](0) end
+}
+
+
+use({
+  "nvim-treesitter/nvim-treesitter-textobjects",
+  after = "nvim-treesitter",
+  requires = "nvim-treesitter/nvim-treesitter",
+})
   use { 'sindrets/diffview.nvim', requires = { 'nvim-lua/plenary.nvim', 'nvim-tree/nvim-web-devicons' } }
   use {
     "nvim-telescope/telescope-file-browser.nvim",
@@ -75,7 +95,7 @@ use {
 
 use {
   "chrisgrieser/nvim-various-textobjs",
-  config = function () 
+  config = function ()
     require("various-textobjs").setup({ useDefaultKeymaps = true })
   end,
 }
@@ -91,9 +111,6 @@ use {
 
 use {
   'nvim-tree/nvim-tree.lua',
-  requires = {
-    'nvim-tree/nvim-web-devicons', -- optional, for file icons
-  }
 }
 
   use {
@@ -110,7 +127,6 @@ use {
       {'hrsh7th/cmp-nvim-lsp'},     -- Required
       {'hrsh7th/cmp-buffer'},       -- Optional
       {'hrsh7th/cmp-path'},         -- Optional
-      {'saadparwaiz1/cmp_luasnip'}, -- Optional
       {'hrsh7th/cmp-nvim-lua'},     -- Optional
 
       -- Snippets

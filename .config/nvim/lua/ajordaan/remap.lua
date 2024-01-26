@@ -25,7 +25,7 @@ vim.keymap.set({"n", "v"}, "<leader>d", [["_d]]) -- delete to void register
 
 -- vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
-vim.keymap.set("n", "<leader>fo", vim.lsp.buf.format)
+vim.keymap.set("n", "<leader>fo", ':Neoformat<CR>')
 
 vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
 vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
@@ -33,14 +33,14 @@ vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
 -- vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
-vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 vim.keymap.set("n", "<C-/>", [[:let @+=expand('%:p:~:.')<CR>]], { noremap = true, silent = true })
 
-vim.keymap.set('n', '<leader>fr', [[<cmd>!rubocop -A %<CR>]], { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>rf', [[<cmd>!rubocop -A %<CR>]], { noremap = true, silent = true })
 
 vim.keymap.set('n', '<leader><leader>l', ':set relativenumber!<CR>', { noremap = true, silent = true })
- 
+vim.keymap.set('n', '<Tab>', ':b#<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<leader><tab>', ':tabnext<CR>', { noremap = true, silent = true })
-vim.keymap.set('n', 'H', '^', { noremap = true, silent = true })
-vim.keymap.set('n', 'L', '$', { noremap = true, silent = true })
-
+vim.keymap.set({ 'n', 'v' }, 'H', '^', { silent = true })
+vim.keymap.set({ 'n', 'v' }, 'L', '$', { silent = true })
+vim.keymap.set( 'v', 'L', '$', { silent = true })
+vim.keymap.set('n', '<leader><leader>c', ':set cursorline! cursorcolumn!<CR>', { noremap = true })

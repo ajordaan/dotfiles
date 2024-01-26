@@ -7,7 +7,9 @@ lsp.ensure_installed({
 	'tsserver',
 	'eslint',
 	'lua_ls',
-	'solargraph'
+	'solargraph',
+  'html',
+  'cssls'
 })
 
 local cmp = require('cmp')
