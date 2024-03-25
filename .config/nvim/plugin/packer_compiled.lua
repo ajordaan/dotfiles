@@ -85,6 +85,11 @@ _G.packer_plugins = {
     path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["aerial.nvim"] = {
+    loaded = true,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/aerial.nvim",
+    url = "https://github.com/stevearc/aerial.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -94,6 +99,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["cmp-nvim-lsp-signature-help"] = {
+    loaded = true,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp-signature-help",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp-signature-help"
   },
   ["cmp-nvim-lua"] = {
     loaded = true,
@@ -105,20 +115,55 @@ _G.packer_plugins = {
     path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
-  cmp_luasnip = {
+  ["diffview.nvim"] = {
     loaded = true,
-    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
-    url = "https://github.com/saadparwaiz1/cmp_luasnip"
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/diffview.nvim",
+    url = "https://github.com/sindrets/diffview.nvim"
+  },
+  ["easypick.nvim"] = {
+    loaded = true,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/easypick.nvim",
+    url = "https://github.com/axkirillov/easypick.nvim"
+  },
+  ["editorconfig.nvim"] = {
+    loaded = true,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/editorconfig.nvim",
+    url = "https://github.com/gpanders/editorconfig.nvim"
+  },
+  ["emmet-vim"] = {
+    loaded = true,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/emmet-vim",
+    url = "https://github.com/mattn/emmet-vim"
+  },
+  firenvim = {
+    loaded = true,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/firenvim",
+    url = "https://github.com/glacambre/firenvim"
   },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["git-blame.nvim"] = {
+    loaded = true,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/git-blame.nvim",
+    url = "https://github.com/f-person/git-blame.nvim"
+  },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
   harpoon = {
     loaded = true,
     path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/ThePrimeagen/harpoon"
+  },
+  ["lazygit.nvim"] = {
+    loaded = true,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/lazygit.nvim",
+    url = "https://github.com/kdheepak/lazygit.nvim"
   },
   ["lsp-zero.nvim"] = {
     loaded = true,
@@ -140,26 +185,68 @@ _G.packer_plugins = {
     path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  neoformat = {
+    loaded = true,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/neoformat",
+    url = "https://github.com/sbdchd/neoformat"
+  },
+  neogen = {
+    loaded = true,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/neogen",
+    url = "https://github.com/danymat/neogen"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-highlight-colors"] = {
+    loaded = true,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/nvim-highlight-colors",
+    url = "https://github.com/brenoprata10/nvim-highlight-colors"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-spectre"] = {
+    loaded = true,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/nvim-spectre",
+    url = "https://github.com/nvim-pack/nvim-spectre"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
-  ["nvim-web-devicons"] = {
-    loaded = false,
+  ["nvim-treesitter-textobjects"] = {
+    load_after = {},
+    loaded = true,
     needs_bufread = false,
-    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/opt/nvim-treesitter-textobjects",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects"
+  },
+  ["nvim-ufo"] = {
+    loaded = true,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/nvim-ufo",
+    url = "https://github.com/kevinhwang91/nvim-ufo"
+  },
+  ["nvim-various-textobjs"] = {
+    config = { "\27LJ\2\nX\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\22useDefaultKeymaps\2\nsetup\21various-textobjs\frequire\0" },
+    loaded = true,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/nvim-various-textobjs",
+    url = "https://github.com/chrisgrieser/nvim-various-textobjs"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
+  },
+  ["oil.nvim"] = {
+    loaded = true,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/oil.nvim",
+    url = "https://github.com/stevearc/oil.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -176,41 +263,132 @@ _G.packer_plugins = {
     path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  ["rose-pine"] = {
-    config = { "\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14rose-pine\frequire\0" },
+  ["promise-async"] = {
     loaded = true,
-    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/rose-pine",
-    url = "https://github.com/rose-pine/neovim"
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/promise-async",
+    url = "https://github.com/kevinhwang91/promise-async"
+  },
+  ["sort.nvim"] = {
+    loaded = true,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/sort.nvim",
+    url = "https://github.com/sQVe/sort.nvim"
   },
   ["splitjoin.vim"] = {
     loaded = true,
     path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/splitjoin.vim",
     url = "https://github.com/AndrewRadev/splitjoin.vim"
   },
+  ["targets.vim"] = {
+    loaded = true,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/targets.vim",
+    url = "https://github.com/wellle/targets.vim"
+  },
+  ["telescope-file-browser.nvim"] = {
+    loaded = true,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim",
+    url = "https://github.com/nvim-telescope/telescope-file-browser.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["toggle-bool.nvim"] = {
+    loaded = true,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/toggle-bool.nvim",
+    url = "https://github.com/gerazov/toggle-bool.nvim"
+  },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
   },
   undotree = {
     loaded = true,
     path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
+  ["vim-better-whitespace"] = {
+    loaded = true,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/vim-better-whitespace",
+    url = "https://github.com/ntpeters/vim-better-whitespace"
+  },
+  ["vim-bundler"] = {
+    loaded = true,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/vim-bundler",
+    url = "https://github.com/tpope/vim-bundler"
+  },
+  ["vim-dispatch"] = {
+    loaded = true,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/vim-dispatch",
+    url = "https://github.com/tpope/vim-dispatch"
+  },
+  ["vim-endwise"] = {
+    loaded = true,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/vim-endwise",
+    url = "https://github.com/tpope/vim-endwise"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-indent-object"] = {
+    loaded = true,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/vim-indent-object",
+    url = "https://github.com/michaeljsmith/vim-indent-object"
+  },
+  ["vim-matchup"] = {
+    loaded = true,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/vim-matchup",
+    url = "https://github.com/andymass/vim-matchup"
+  },
+  ["vim-rails"] = {
+    loaded = true,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/vim-rails",
+    url = "https://github.com/tpope/vim-rails"
+  },
+  ["vim-repeat"] = {
+    loaded = true,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/vim-repeat",
+    url = "https://github.com/tpope/vim-repeat"
+  },
+  ["vim-slim"] = {
+    loaded = true,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/vim-slim",
+    url = "https://github.com/onemanstartup/vim-slim"
+  },
+  ["vim-sneak"] = {
+    loaded = true,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/vim-sneak",
+    url = "https://github.com/justinmk/vim-sneak"
   },
   ["vim-surround"] = {
     loaded = true,
     path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/vim-surround",
     url = "https://github.com/tpope/vim-surround"
   },
-  ["vscode.nvim"] = {
+  ["vim-textobj-user"] = {
     loaded = true,
-    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/vscode.nvim",
-    url = "https://github.com/Mofiqul/vscode.nvim"
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/vim-textobj-user",
+    url = "https://github.com/kana/vim-textobj-user"
+  },
+  ["vim-textobj-variable-segment"] = {
+    loaded = true,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/vim-textobj-variable-segment",
+    url = "https://github.com/Julian/vim-textobj-variable-segment"
+  },
+  ["vim-visual-multi"] = {
+    loaded = true,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/start/vim-visual-multi",
+    url = "https://github.com/mg979/vim-visual-multi"
+  },
+  ["yaml.nvim"] = {
+    loaded = false,
+    needs_bufread = true,
+    only_cond = false,
+    path = "/Users/andrewjordaan/.local/share/nvim/site/pack/packer/opt/yaml.nvim",
+    url = "https://github.com/cuducos/yaml.nvim"
   }
 }
 
@@ -219,10 +397,22 @@ time([[Defining packer_plugins]], false)
 time([[Config for Comment.nvim]], true)
 try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
 time([[Config for Comment.nvim]], false)
--- Config for: rose-pine
-time([[Config for rose-pine]], true)
-try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14rose-pine\frequire\0", "config", "rose-pine")
-time([[Config for rose-pine]], false)
+-- Config for: nvim-various-textobjs
+time([[Config for nvim-various-textobjs]], true)
+try_loadstring("\27LJ\2\nX\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\22useDefaultKeymaps\2\nsetup\21various-textobjs\frequire\0", "config", "nvim-various-textobjs")
+time([[Config for nvim-various-textobjs]], false)
+-- Load plugins in order defined by `after`
+time([[Sequenced loading]], true)
+vim.cmd [[ packadd nvim-treesitter ]]
+vim.cmd [[ packadd nvim-treesitter-textobjects ]]
+time([[Sequenced loading]], false)
+vim.cmd [[augroup packer_load_aucmds]]
+vim.cmd [[au!]]
+  -- Filetype lazy-loads
+time([[Defining lazy-load filetype autocommands]], true)
+vim.cmd [[au FileType yaml ++once lua require("packer.load")({'yaml.nvim'}, { ft = "yaml" }, _G.packer_plugins)]]
+time([[Defining lazy-load filetype autocommands]], false)
+vim.cmd("augroup END")
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

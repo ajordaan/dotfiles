@@ -108,6 +108,14 @@ eval "$(rbenv init -)"
 eval "$(nodenv init -)"
 export PATH=/Users/andrewjordaan/.nodenv/shims:/Users/andrewjordaan/.rbenv/shims:/Users/andrewjordaan/.asdf/shims:/usr/local/Cellar/asdf/0.8.1_1/libexec/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/Library/Apple/usr/bin:/usr/local/bin
 
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$GOPATH/bin
+alias air='~/go/bin/air'
+
 alias cdhowler='cd ~/Documents/projects/Howler'
 alias yamltest='bundle exec rails test test/i18n/missing_translations_test.rb'
 alias rtest='bundle exec rails test'

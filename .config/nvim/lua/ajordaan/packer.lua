@@ -14,21 +14,10 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use({
-	  'rose-pine/neovim',
-	  as = 'rose-pine',
-	  config = function()
-		  require("rose-pine").setup()
---		  vim.cmd('colorscheme rose-pine')
-	  end
-  })
+  use('folke/tokyonight.nvim')
+  -- use 'Mofiqul/vscode.nvim'
 
-  use 'Mofiqul/vscode.nvim'
-
-  require('vscode').setup({
-    italic_comments = true,
-  })
-
+  use('stevearc/oil.nvim')
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'})
   use('nvim-treesitter/playground')
   -- use('nvim-treesitter/nvim-treesitter-context')
@@ -42,7 +31,7 @@ return require('packer').startup(function(use)
   use('tpope/vim-repeat')
   use('mg979/vim-visual-multi')
   use('wellle/targets.vim')
-  use('andymass/vim-matchup')
+  -- use('andymass/vim-matchup')
   use('michaeljsmith/vim-indent-object')
   use('onemanstartup/vim-slim')
   use('hrsh7th/cmp-nvim-lsp-signature-help')
@@ -66,6 +55,9 @@ return require('packer').startup(function(use)
   use('nvim-pack/nvim-spectre')
   use {'axkirillov/easypick.nvim', requires = 'nvim-telescope/telescope.nvim'}
   use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
+
+  use { "danymat/neogen", requires = "nvim-treesitter/nvim-treesitter" }
+
 
 use {
     'glacambre/firenvim',
@@ -107,10 +99,6 @@ use {
     "nvim-treesitter/nvim-treesitter",
     "nvim-telescope/telescope.nvim" -- optional
   },
-}
-
-use {
-  'nvim-tree/nvim-tree.lua',
 }
 
   use {

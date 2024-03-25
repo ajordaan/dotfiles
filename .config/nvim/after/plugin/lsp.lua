@@ -32,7 +32,6 @@ lsp.setup_nvim_cmp({
 	mapping = cmp_mappings
 })
 
-lsp.on_attach(function(client, bufnr)
 	local opts = {buffer = bufnr, remap = false, noremap = true}
 
 	vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
@@ -45,5 +44,17 @@ lsp.on_attach(function(client, bufnr)
 	vim.keymap.set("n", "<leader>vrr", function() vim.lsp.buf.references() end, opts)
 	vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
 	vim.keymap.set("i", "<C-s>", function() vim.lsp.buf.signature_help() end, opts)
-end)
 lsp.setup()
+
+local util = require("lspconfig.util")
+
+lsp.configure('solargraph', {
+  settings = {
+    solargraph = {
+      root_dir = util.root_pattern("Gemfile", ".git")(fname) or util.path.dirname(vim.api.nvim_buf_get_name(0)),
+      diagnostics = true,
+      completion = true
+    }
+  }
+})
+

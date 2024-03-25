@@ -4,7 +4,7 @@ local git_blame = require('gitblame')
 
 require('lualine').setup({
   options = {
-    theme = 'vscode' 
+    theme = 'tokyonight'
   },
   sections = {
     lualine_c = {
